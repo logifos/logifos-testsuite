@@ -1,0 +1,55 @@
+schema: logifos-testsuite/provenance/1
+language: render
+generation: 1
+engine:
+  kind: logifos-rs
+  version: 0.1.0
+  generator: logifos-corpus --desired; scripts/generate-stage.py
+fonts:
+- id: cambria-math
+  sha256: fd0d6fea5a3318e39bdcd14bf60fb6bae5af787ce4dd42a048be2a1cf62a2d1f
+  face_index: 1
+  source:
+    kind: fontist
+    formula: cambria
+- id: stix-two-math
+  sha256: 562551b15b836e6e01d1b7350909baf3c8c8d83260c1190fbf4544333e6936de
+  face_index: 0
+  source:
+    kind: git
+    repository: https://github.com/google/fonts
+    revision: 823468bd7825152bce2b8fd2cf740432ad2fce8d
+corpus_revisions:
+  katex: 9b2280dee4acb4da7d866dbaccad120b00949c27
+  mathjax: 7feeafff7b1deb0ccd9dfd329d59da7a3ba5c14a
+  jeuclid: 1dd19534348ba6e146a8eed293446430e104f603
+  webkit-mathml: c452784b757b1512c9dc6c01f490649976c51230
+  plurimath-testsuite: 7c7b4c628a8e1db149594519f7f2cc00bd08fa73
+  lasem: e657038b7f348a91fabd06da192aedef137bd2f2
+sha256:
+  payloads/lasem__bugs.yaml: fbeddb6bc31b61c49a7bdc77e6a464b4cbd96c85b7b70c48dabec58fe1a3a94f
+  payloads/lasem__gtkmathview.yaml: 1291f0b457e20876a43b334273ba9112ac8f1ce3db07b7f9c710ba50eec1b199
+  payloads/lasem__misc.yaml: 5e8bd4cedc5222043deef49b9c2ebeb857d2a940cf77b17fff3065c6bbaf2d63
+  payloads/lasem__mozilla.yaml: 4775d03b666cbf6d6e0893c6c00d81b7cf0b8db1d7195a53de24ca7a451156b7
+  payloads/lasem__testsuite.yaml: f09d3d015e01cd9ae17e9fc87c4e67c9afc6034e478baacf63005b32acdf5a09
+  payloads/plurimath-testsuite__fences.yaml: 692b6a48cb4133047f5a9afa3dcc9cb0ef50a4e250ba903f1ad02211855b64db
+  payloads/plurimath-testsuite__fractions.yaml: ea84dd7825a4ba3ac69f77e1b39720ac66a6222d13a4fda64c9255faf34859ea
+  payloads/plurimath-testsuite__layout.yaml: d7dc781c67d7520f2ada78a4f3c42d066fcf820bbacecc8636e68462ace7df70
+  payloads/plurimath-testsuite__model-roundtrip-fences.yaml: 1a251050bf58598f4dc960a5a1bc9394dc9276f5d56aaf0bd2671c8ed3ae447b
+  payloads/plurimath-testsuite__model-roundtrip-fractions.yaml: a72aa75f85abff491d41baea89f873a99b5e781e758e3871d2b7f3ecaa4ea34d
+  payloads/plurimath-testsuite__model-roundtrip-layout.yaml: b2b7341fa1ce97c4f7a3dee035bc3a069964f257c84ff2cc3008dee9fc115913
+  payloads/plurimath-testsuite__model-roundtrip-over-under.yaml: 6db10bab157632f8fa16996132fa755792f931f5c7b8120577fd105ab4d4122d
+  payloads/plurimath-testsuite__model-roundtrip-partial-render.yaml: 99a71a821eec94e77ef25eb4e36e62a44f847b3fe5fe817a42e6048e3951956d
+  payloads/plurimath-testsuite__model-roundtrip-roots.yaml: e3aed7a4621fc546c874ebe70c8d536fe1b1f8732e64b30b21011a34a5267aab
+  payloads/plurimath-testsuite__model-roundtrip-scripts.yaml: 9da89b69258fef5105285b84a8aad2ad5ea5a2890dcf6be643b7630623a22dcd
+  payloads/plurimath-testsuite__model-roundtrip-tables.yaml: 18ba490d93b114c21f8425237a31d0ab00a4906400f474453141120f596e1990
+  payloads/plurimath-testsuite__model-roundtrip-text.yaml: 1355388a7e1941b617fa356676f91bf5374d1b98e620791416cac75f8fff4b05
+  payloads/plurimath-testsuite__model-roundtrip-tokens.yaml: e8566783ca86eb2ac22faf393d1e7b559d1be17881c38c28a3d5e054d16032eb
+  payloads/plurimath-testsuite__over-under.yaml: f68ee5e50463fbbb31d38f8002110eb8d69f9002efd2e90032251b95e8971f9e
+  payloads/plurimath-testsuite__partial-render.yaml: d230d149c8236aced45fe1d306b632c3e167dd2c622f9066da2b6de368d95a25
+  payloads/plurimath-testsuite__roots.yaml: db0518aac415fe530bc9daac6b101d9c7ea1b47066b36d144307688f5fc2037b
+  payloads/plurimath-testsuite__scripts.yaml: ec6cb6ea52d424310598bed1b5babbe5efd9cc03a79e9ce07241427762992764
+  payloads/plurimath-testsuite__tables.yaml: d674409b1df550189ce68bc3b9fda1d331dd6da63534e077fdc05d8cc3c2de6b
+  payloads/plurimath-testsuite__text.yaml: 18494ef986792ba77d5b2479536fe3a7cb7532c255f78d0fad8611411a73eab5
+  payloads/plurimath-testsuite__tokens.yaml: f62e4f64838b1ef709c65200b7df9f11092deee0f2a70d27ee34465883409b46
+rows: 1312
